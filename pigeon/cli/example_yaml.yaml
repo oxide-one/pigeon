@@ -1,0 +1,12 @@
+---
+- name: "Example request"
+  rows: 20
+  vars:
+    - name: "Person"
+      person:
+  fields:
+    - name: "age"
+      value: "{{ Person.age }}"
+  outputs:
+    - name: "Age Config"
+      file: "age_{{ row }}.conf"
